@@ -1,0 +1,17 @@
+.error{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+select{
+    padding: 10px;
+    font-size: 15px;
+    margin:10px;
+    width: 80%;
+}
+.date-picker{
+    padding: 10px;
+    font-size: 15px;
+    margin:10px;
+    width: 80%;
+}
