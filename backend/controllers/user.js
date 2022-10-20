@@ -54,7 +54,7 @@ const Profile = async(req,res)=>{
         if(!user)
             return res.send({statusCode:404,message:"User not found"})
         const {name,email,profile,age,dob,gender} = user
-       res.send({statusCode:200,message:"Profile fetched sucessfully",data:{name,email,profile,age,dob,gender}})
+       res.send({statusCode:200,message:"Profile fetched sucessfully",data:{name,email,profile,age,dob,gender,number}})
     } catch (error) {
         res.send({statusCode:500,message: "Internal server error"})
     }
