@@ -53,7 +53,7 @@ const Profile = async(req,res)=>{
         const user = await userSchema.findOne({email:decoded.email})
         if(!user)
             return res.send({statusCode:404,message:"User not found"})
-        const {name,email,profile,age,dob,gender} = user
+        const {name,email,profile,age,dob,gender,number} = user
        res.send({statusCode:200,message:"Profile fetched sucessfully",data:{name,email,profile,age,dob,gender,number}})
     } catch (error) {
         res.send({statusCode:500,message: "Internal server error"})
